@@ -6,11 +6,11 @@ def main(dict):
     from platform_services import GlobalTaggingV1
     from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
     
-    authenticator = IAMAuthenticator('kPKHngCU7xNXcoZMEdvJ6PHG5GTQzX8jmFS-Lpg5jry4')
+    authenticator = IAMAuthenticator('API Key')
     global_tagging = GlobalTaggingV1(authenticator=authenticator)
     
     resource = {}
-    resource['resource_id'] = 'crn:v1:bluemix:public:containers-kubernetes:us-south:a/10d5953a4ae3bcb588e62b724aa43d70:bpts5vad0lnqunih8lo0::'
+    resource['resource_id'] = ''
     resources = [ resource ]
     
     env = global_tagging.attach_tag('testskyler', resources)
