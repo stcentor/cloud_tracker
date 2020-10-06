@@ -68,7 +68,7 @@ def main(dict):
     context = ssl.create_default_context()
     
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-        server.login("skyler.tangneycentor@gmail.com", password)
+        server.login("user@email.com", password)
         # TODO: Send email here
         server.sendmail(sender_email, receiver_email, message)
 
